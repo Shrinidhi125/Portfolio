@@ -2,50 +2,210 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Shrinidhi Joglekar | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Home</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="background"></div>
-
-    <header class="navbar glass">
-      <div class="logo">Portfolio</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="biodata.html">Bio-Data</a></li>
-        </ul>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">Shrinidhi Joglekar</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Resume</a>
+        <a href="biodata.html" class="nav-link">Bio-Data</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Hello, I’m <span class="accent">Shrinidhi J</span></h1>
-        <p class="sub">
-          Enthusiastic engineer focused on creating efficient, scalable software
-          that solves actual problems.
-        </p>
-
-        <div class="action-buttons">
-          <button class="btn primary" onclick="location.href='resume.html'">
-            View Resume
-          </button>
-          <button class="btn outline" onclick="location.href='biodata.html'">
-            Bio-Data
-          </button>
+    <main class="page">
+      <!-- Hero / Intro -->
+      <section class="hero-block appear">
+        <div class="hero-main">
+          <p class="hero-tag">Developer • Learner • Builder</p>
+          <h1 class="hero-title">
+            Hey, I'm <span class="accent">Shrinidhi Joglekar</span>
+          </h1>
+          <p class="hero-role" id="roleText"></p>
+          <p class="hero-summary">
+            I like building simple, useful and fast web experiences. Clean
+            layout, clear logic and a good user experience are what I focus on.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Contact</a>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-right">
-        <div class="profile-frame">
-          <img src="assets/profile.png" class="profile-img" />
+        <div class="hero-side">
+          <div class="profile-card">
+            <div class="profile-circle">
+              <img src="assests/profile.png" alt="photo" class="profile-pic" />
+            </div>
+
+            <p class="profile-text">3rd Year CSE Student</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">© 2025 Portfolio │ Designed by Shrinidhi</footer>
+      <!-- About -->
+      <section class="content-section appear">
+        <h2 class="section-title">About</h2>
+        <div class="card">
+          <p>
+            I'm a CSE student who enjoys solving problems through code. I work
+            mostly with web technologies and I like to keep things simple,
+            understandable and maintainable. I'm currently improving my
+            full-stack skills and learning how to ship complete products.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="content-section appear">
+        <h2 class="section-title">Skills</h2>
+        <div class="card">
+          <div class="badge-row">
+            <span class="pill">HTML &amp; CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C</span>
+            <span class="pill">C++</span>
+            <span class="pill">Java</span>
+            <span class="pill">UI/UX</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Git &amp; GitHub</span>
+          </div>
+          <p class="small-note">
+            I prefer building clean, minimal and user-friendly web applications
+            with focus on smooth functionality, performance and real-world
+            usability
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="content-section appear" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3 class="project-title">Fit Sphere</h3>
+            <p class="project-text">
+              Fit Sphere empowers students with efficient campus workouts and a
+              unique "Mess Hall Diet" guide to achieve fitness goals using only
+              standard hostel food.
+            </p>
+            <ul class="project-list">
+              <li>
+                Guides students to build muscle and lose fat using only standard
+                hostel food.
+              </li>
+              <li>
+                Delivers time-efficient routines specifically tailored for busy
+                schedules and university gyms.
+              </li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="project-title">Lab Equipment Management</h3>
+            <p class="project-text">
+              A Java application streamlining lab logistics by automating
+              equipment tracking, issuance, and returns for students and
+              faculty.
+            </p>
+            <ul class="project-list">
+              <li>
+                Manages real-time equipment availability and automated user
+                transactions.
+              </li>
+              <li>Built with Java.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-text">
+              This site itself – a simple and clean portfolio layout focusing on
+              clarity, smooth scrolling and friendly tone.
+            </p>
+            <ul class="project-list">
+              <li>Fully responsive layout.</li>
+              <li>Built with plain HTML, CSS and JavaScript.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="content-section appear">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <h3>B.E (Computer Science &amp; Engineering) - SGPA: 8.3</h3>
+          <p>Canara Engineering College · 2023 – 2027</p>
+
+          <h3>PUC (PCMCs) – 87.5%</h3>
+          <p>MES Pre-University College · 2021 – 2023</p>
+
+          <p class="small-note">
+            Actively learning full-stack development and improving
+            problem-solving skills.
+          </p>
+        </div>
+      </section>
+
+      <!-- Achivements -->
+
+      <section class="content-section appear" id="achievements">
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="card achievement-card">
+          <ul class="achievement-list">
+            <li>
+              📜 Got selected for Online Hackathon at Hack with India (2025)
+            </li>
+            <li>
+              💡Participated in multiple technical events and project expos
+            </li>
+            <li>
+              📈 Consistently improving problem-solving & logical thinking
+              skills
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="content-section appear" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="card contact-card">
+          <p><strong>Email:</strong> shrinidhij.07@example.com</p>
+          <p><strong>Phone No:</strong> +91 7338514557</p>
+          <p>
+            <strong>GitHub:</strong>
+            <a ahref="https://github.com/Shrinidhi125"
+              >github.com/shrinidhi125</a
+            >
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              ahref="https://www.linkedin.com/in/shrinidhi-sudesh-joglekar-056492340/?trk=public-profile-join-page"
+              >linkedin.com/in/shrinidhi-sudesh-joglekar</a
+            >
+          </p>
+          <p><strong>Location:</strong> Sirsi, Karnataka, India</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 · Built by Shrinidhi J</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

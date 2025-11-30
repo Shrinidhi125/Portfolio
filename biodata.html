@@ -2,53 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Shrinidhi Joglekar | Bio-data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Bio-Data</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="background"></div>
-
-    <header class="navbar glass">
-      <div class="logo">Bio-Data</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html" class="active">Bio-Data</a></li>
-      </ul>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">SN</span>
+        <span class="brand-text">Shrinidhi</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Resume</a>
+        <a href="biodata.html" class="nav-link active">Bio-Data</a>
+      </nav>
     </header>
 
-    <section class="page">
-      <h1 class="page-title">Bio-Data</h1>
-
-      <div class="card-container">
-        <div class="card glass fade">
-          <h2>Personal Details</h2>
-          <p><strong>Name:</strong> Shrnidhi J</p>
-          <p><strong>DOB:</strong> 07-10-2005</p>
-          <p><strong>Gender:</strong> Female</p>
-          <p><strong>Nationality:</strong> Indian</p>
+    <main class="page">
+      <section class="content-section appear">
+        <h2 class="section-title">Bio-Data</h2>
+        <div class="card">
+          <table class="bio-table">
+            <tr>
+              <th>Full Name</th>
+              <td>Shrinidhi Joglekar</td>
+            </tr>
+            <tr>
+              <th>Date of Birth</th>
+              <td>07 October 2005</td>
+            </tr>
+            <tr>
+              <th>Gender</th>
+              <td>Female</td>
+            </tr>
+            <tr>
+              <th>Nationality</th>
+              <td>Indian</td>
+            </tr>
+            <tr>
+              <th>Languages</th>
+              <td>English, Kannada, Hindi</td>
+            </tr>
+            <tr>
+              <th>Address</th>
+              <td>Sirsi, Karnataka, India</td>
+            </tr>
+            <tr>
+              <th>Hobbies</th>
+              <td>Fitness, Cycling, Reading</td>
+            </tr>
+          </table>
         </div>
+      </section>
+    </main>
 
-        <div class="card glass fade">
-          <h2>Contact</h2>
-          <p><strong>Phone:</strong> +91-7338514557</p>
-          <p><strong>Email:</strong> shrinidhij.07@example.com</p>
-          <p><strong>Address:</strong> Mangaluru, Karnataka</p>
-        </div>
+    <footer class="site-footer">
+      <p>© 2025 · Build by Shrinidhi J</p>
+    </footer>
 
-        <div class="card glass fade">
-          <h2>Languages</h2>
-          <div class="pill-group">
-            <span class="pill">English</span>
-            <span class="pill">Kannada</span>
-            <span class="pill">Hindi</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">© 2025 Portfolio │ Designed by Shrinidhi</footer>
+    <script src="script.js"></script>
   </body>
 </html>
